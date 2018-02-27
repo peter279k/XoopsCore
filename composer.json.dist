@@ -1,0 +1,25 @@
+{
+    "name": "xoops/xoops-library",
+    "license": "GPL-2.0-or-later",
+    "type": "project",
+    "description": "The XOOPS Library distribution",
+    "autoload": {
+        "psr-4": {
+            "Xoops\\": "./xoops_lib/Xoops/",
+            "Xmf\\": "./xoops_lib/Xmf/"
+        }
+    },
+    "require": {
+        "xoops/base-requires": "0.3.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "roave/security-advisories": "dev-master"
+    },
+    "config": {
+        "vendor-dir": "./xoops_lib/vendor"
+    },
+    "extra": {
+        "xoops_modules_path": "./htdocs/modules"
+    }
+}
