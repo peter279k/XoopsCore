@@ -139,6 +139,14 @@ class xoopslistsTest extends \PHPUnit\Framework\TestCase
         $this->assertTrue(count($value)>0);
     }
 
+    public function test_getMonthList()
+    {
+        $class = $this->myClass;
+        $value = $class::getMonthList();
+        $this->assertTrue(is_array($value));
+        $this->assertTrue(count($value)>0);
+    }
+
     public function test_340()
     {
         $class = $this->myClass;

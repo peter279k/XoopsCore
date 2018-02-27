@@ -1,0 +1,31 @@
+﻿<phpunit
+    backupGlobals="false"
+    backupStaticAttributes="false"
+    colors="false"
+    verbose="false"
+    stopOnError="false"
+    stopOnFailure="false"
+    stopOnIncomplete="false"
+    stopOnSkipped="false"
+    bootstrap="./tests/unit/bootstrap.php"
+    >
+
+<testsuites>
+    <testsuite name="Xoops_lib Test Suite">
+        <directory>./tests/unit/xoopsLib</directory>
+    </testsuite>
+</testsuites>
+
+<filter>
+    <whitelist>
+        <directory suffix=".php">./htdocs/xoops_lib</directory>
+		<exclude>
+        <directory suffix=".php">./htdocs/xoops_lib/HTMLPurifier</directory>
+        <directory suffix=".php">./htdocs/xoops_lib/modules</directory>
+        <directory suffix=".php">./htdocs/xoops_lib/smarty</directory>
+        <directory suffix=".php">./htdocs/xoops_lib/vendor</directory>
+		</exclude>
+    </whitelist>
+</filter>
+
+</phpunit>

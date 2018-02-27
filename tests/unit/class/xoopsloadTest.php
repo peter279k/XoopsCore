@@ -40,6 +40,12 @@ class XoopsloadTest extends \PHPUnit\Framework\TestCase
 				$this->assertSame(true,$k);
 			}
 		}
-    }
+	}
+
+	public function test_loadWithExistedClass()
+	{
+		$class = $this->myClass;
+		$value = $class::loadCoreConfig();
+	}
 }
 ?>
